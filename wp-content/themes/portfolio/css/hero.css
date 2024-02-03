@@ -1,0 +1,109 @@
+.hero__container {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.hero__summary {
+    line-height: 1.5425;
+    font-weight: 600;
+    margin-inline: 15%;
+    z-index: 100;
+}
+
+.hero__summary * {
+    font-size: clamp(1.8rem, 2.5vw, 4.4rem);
+}
+
+.hero__blob {
+    position: absolute;
+    pointer-events: none;
+}
+
+.hero__blob--1 {
+    width: 134.8rem;
+    height: 156.9rem;
+    top: 15%;
+    right: -30%;
+    animation: blob1Animation 10s infinite;
+    z-index: 3;
+    rotate: -80deg;
+}
+
+.hero__blob--2 {
+    width: 165.4rem;
+    height: 101.5rem;
+    top: 0;
+    left: -20%;
+    animation: blob2Animation 10s infinite;
+    z-index: 2;
+}
+
+.hero__blob--3 {
+    width: 167.6rem;
+    height: 142.4rem;
+    top: -50%;
+    left: -10%;
+    animation: blob3Animation 10s infinite;
+    z-index: 1;
+}
+
+@keyframes blob1Animation {
+    0%   { transform: translateX(0%); rotate: 0deg;}
+    50%  { transform: translateX(-100%); rotate: -10deg;}
+    100% { transform: translateX(0%); rotate: 0deg;}
+}
+
+@keyframes blob2Animation {
+    0%   {transform: translateX(0%); rotate: 0deg;}
+    50%  {transform: translateX(100%); rotate: 15deg;}
+    100% {transform: translateX(0%); rotate: 0deg;}
+}
+
+@keyframes blob3Animation {
+    0%   {transform: translate(0, 0)}
+    50%  {transform: translate(50%, -50%)}
+    100% {transform: translate(0, 0)}
+}
+
+@media screen and (max-width: 767px) {
+    .hero__blob--1 {
+        top: -10%;
+        right: 0%;
+        animation: blob1MobileAnimation 5s infinite;
+    }
+    
+    .hero__blob--2 {
+        top: 0;
+        left: -50%;
+        animation: blob2MobileAnimation 5s infinite;
+    }
+    
+    .hero__blob--3 {
+        top: -20%;
+        left: -50%;
+        animation: blob3MobileAnimation 5s infinite;
+    }
+}
+
+@keyframes blob1MobileAnimation {
+    0%   {transform: translate(0, 0)}
+    50%  {transform: translate(10%, -10%)}
+    100% {transform: translate(0, 0)}
+}
+@keyframes blob2MobileAnimation {
+    0%   {transform: translate(0, 0)}
+    50%  {transform: translate(10%, -10%)}
+    100% {transform: translate(0, 0)}
+}
+@keyframes blob3MobileAnimation {
+    0%   {transform: translate(0, 0)}
+    50%  {transform: translate(10%, -10%)}
+    100% {transform: translate(0, 0)}
+}

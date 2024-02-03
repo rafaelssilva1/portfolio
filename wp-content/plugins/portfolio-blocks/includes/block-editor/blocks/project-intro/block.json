@@ -1,0 +1,42 @@
+{
+	"apiVersion": 2,
+	"name": "portfolio/project-intro",
+	"version": "0.1.0",
+	"title": "Project Intro",
+	"category": "portfolio",
+	"icon": "text",
+	"description": "Project Intro",
+	"supports": {
+		"html": true
+	},
+	"attributes": {
+		"name": {
+			"type": "string",
+			"default": "Project name"
+		},
+		"nature": {
+			"type": "string",
+			"default": "Project nature"
+		},
+		"description": {
+			"type": "string",
+			"default": "A cosmetics e-commerce company requested the development of an application to facilitate the entry of orders from suppliers arriving at the warehouse. Currently, these entries are done manually, with each product being checked, and the product code (EAN) being manually entered into the inventory management system."
+		},
+		"role": {
+			"type": "string",
+			"default": "Lorem"
+		},
+		"tools": {
+			"type": "string",
+			"default": "Lorem"
+		},
+		"scope": {
+			"type": "string",
+			"default": "Lorem"
+		}
+	},
+	"textdomain": "portfolio-blocks",
+	"editorScript": "file:../../../../build/project-intro.js",
+	"editorStyle": "file:../../../../build/project-intro.css",
+	"style": "file:../../../../build/style-project-intro.css"
+}

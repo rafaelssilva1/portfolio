@@ -1,0 +1,29 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.featured {
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1rem;
+		padding: 6.4rem 3.2rem;
+	}
+
+	&__title {
+		text-align: center;
+		font-weight: 500;
+		font-size: clamp(2rem, 2.5vw, 4rem);
+	}
+
+	&__subtitle {
+		text-align: center;
+		font-weight: 300;
+		font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+	}
+}

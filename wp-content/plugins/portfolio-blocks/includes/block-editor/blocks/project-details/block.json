@@ -1,0 +1,26 @@
+{
+	"apiVersion": 2,
+	"name": "portfolio/project-details",
+	"version": "0.1.0",
+	"title": "Project Details",
+	"category": "portfolio",
+	"icon": "list-view",
+	"description": "Project Details",
+	"supports": {
+		"html": true
+	},
+	"attributes": {
+		"description": {
+			"type": "string",
+			"default": "A cosmetics e-commerce company requested the development of an application to facilitate the entry of orders from suppliers arriving at the warehouse. Currently, these entries are done manually, with each product being checked, and the product code (EAN) being manually entered into the inventory management system."
+		},
+		"details": {
+			"type": "array",
+			"default": []
+		}
+	},
+	"textdomain": "portfolio-blocks",
+	"editorScript": "file:../../../../build/project-details.js",
+	"editorStyle": "file:../../../../build/project-details.css",
+	"style": "file:../../../../build/style-project-details.css"
+}

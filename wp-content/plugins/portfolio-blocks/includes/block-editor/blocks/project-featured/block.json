@@ -1,0 +1,30 @@
+{
+	"apiVersion": 2,
+	"name": "portfolio/project-featured",
+	"version": "0.1.0",
+	"title": "Project Featured",
+	"category": "portfolio",
+	"icon": "star-filled",
+	"description": "Project Featured",
+	"supports": {
+		"html": true
+	},
+	"attributes": {
+		"title": {
+			"type": "string",
+			"default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+		},
+		"subtitle": {
+			"type": "string",
+			"default": "Lorem ipsum"
+		},
+		"backgroundColor": {
+			"type": "string",
+			"default": "#FDD9D9"
+		}
+	},
+	"textdomain": "portfolio-blocks",
+	"editorScript": "file:../../../../build/project-featured.js",
+	"editorStyle": "file:../../../../build/project-featured.css",
+	"style": "file:../../../../build/style-project-featured.css"
+}

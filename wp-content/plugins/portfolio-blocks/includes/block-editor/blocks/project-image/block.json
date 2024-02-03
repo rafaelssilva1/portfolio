@@ -1,0 +1,35 @@
+{
+	"apiVersion": 2,
+	"name": "portfolio/project-image",
+	"version": "0.1.0",
+	"title": "Project Image",
+	"category": "portfolio",
+	"icon": "format-image",
+	"description": "Project Image",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"image": {
+			"type": "object",
+			"default": {
+				"url": "",
+				"alt": ""
+			}
+		}
+	},
+	"example": {
+		"attributes": {
+			"preview": true,
+			"columns": {
+				"desktop": 1,
+				"tablet": 1,
+				"mobile": 1
+			}
+		}
+	},
+	"textdomain": "portfolio-blocks",
+	"editorScript": "file:../../../../build/project-image.js",
+	"editorStyle": "file:../../../../build/project-image.css",
+	"style": "file:../../../../build/style-project-image.css"
+}

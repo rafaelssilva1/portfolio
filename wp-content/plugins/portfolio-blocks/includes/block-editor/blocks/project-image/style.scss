@@ -1,0 +1,28 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.image {
+	&__container {
+		height: 65.5rem;
+	}
+
+	&__image {
+		height: 65.5rem !important;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.image {
+		&__container {
+			height: 30rem;
+		}
+
+		&__image {
+			height: 30rem !important;
+		}
+	}
+}

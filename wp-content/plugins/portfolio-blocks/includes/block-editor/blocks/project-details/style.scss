@@ -1,0 +1,84 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.details {
+	&__container {
+		display: flex;
+		gap: 8rem;
+		width: 100%;
+
+		padding-inline: 3.2rem;
+	}
+
+	&__inner-section {
+		&--heading {
+			flex-basis: 30%;
+		}
+
+		&--content {
+			flex-basis: 70%;
+		}
+	}
+
+	&__heading {
+	}
+
+	&__featured-text {
+		font-weight: 300;
+		font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+
+		margin-bottom: 6.4rem;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 1.6rem;
+	}
+
+	&__item {
+		display: flex;
+		gap: 2rem;
+	}
+
+	&__title {
+		flex-basis: 20%;
+		font-weight: 300;
+		font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+
+		text-transform: uppercase;
+
+		min-width: 25%;
+	}
+
+	&__description {
+		flex-basis: 80%;
+		font-weight: 300;
+		font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.details {
+		&__container {
+			display: flex;
+			flex-direction: column;
+			gap: 2rem;
+			width: 100%;
+
+			padding-inline: 0;
+		}
+	}
+}
+
+.editor {
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}

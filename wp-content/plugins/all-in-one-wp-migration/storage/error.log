@@ -1,0 +1,6 @@
+Feb 03 2024 19:11:13
+{"Number":2,"Message":"rmdir(C:\\Users\\rafaelsimaosilva\\Local Sites\\portfolio\\app\\public\\wp-content\\plugins\\all-in-one-wp-migration\\storage\\hb3s8rqvx6zw): Directory not empty","File":"C:\\Users\\rafaelsimaosilva\\Local Sites\\portfolio\\app\\public\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\filesystem\\class-ai1wm-directory.php","Line":72}
+
+Feb 03 2024 19:11:14
+{"Number":2,"Message":"filesize(): stat failed for C:\\Users\\rafaelsimaosilva\\Local Sites\\portfolio\\app\\public\\wp-content\\plugins\\all-in-one-wp-migration\\storage\\hb3s8rqvx6zw\\portfolio.local-20240203-190922-hism69.wpress","File":"C:\\Users\\rafaelsimaosilva\\Local Sites\\portfolio\\app\\public\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\archiver\\class-ai1wm-archiver.php","Line":231}
+

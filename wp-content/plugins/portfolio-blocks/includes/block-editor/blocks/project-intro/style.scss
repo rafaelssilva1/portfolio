@@ -1,0 +1,56 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.intro {
+	&__container {
+		display: flex;
+		align-items: flex-end;
+		gap: 8rem;
+		width: 100%;
+	}
+
+	&__inner-section {
+		flex: 1;
+	}
+
+	&__name {
+		font-size: clamp(2.4rem, 2.5vw, 5.6rem);
+		margin-bottom: 2rem;
+	}
+
+	&__nature {
+		color: var(--color-grey);
+		font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+	}
+
+	&__description {
+		max-width: 70rem;
+		font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+		font-weight: 300;
+	}
+
+	&__details {
+		font-weight: 300;
+
+		& span {
+			font-weight: 700;
+		}
+	}
+}
+
+
+@media screen and (max-width: 767px) {
+	.intro {
+		&__container {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 2rem;
+			width: 100%;
+		}
+	}
+}
