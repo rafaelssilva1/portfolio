@@ -73,7 +73,7 @@ $info = new WP_Query(array(
                 <?php
                 $works = new WP_Query(array(
                     'post_type' => 'experiences',
-                    'posts_per_page' => -1,
+                    'posts_per_page' => 5,
                     'orderby' => 'meta_value_num',
                     'order' => 'ASC',
                 ));
